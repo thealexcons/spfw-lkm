@@ -163,7 +163,7 @@ static int __init spfw_init(void) {
 	nf_register_net_hook(&init_net, spfw_nfho);
 
 	pr_info("Initialised SPFW module\n");
-    return 0;
+	return 0;
 }
 
 
@@ -189,7 +189,7 @@ static void __exit spfw_exit(void) {
 	nf_unregister_net_hook(&init_net, spfw_nfho);
 	kfree(spfw_nfho);
 
-    pr_info("Exitted SPFW module\n");
+	pr_info("Exitted SPFW module\n");
 }
 
 
